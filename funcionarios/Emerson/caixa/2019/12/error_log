@@ -1,0 +1,1 @@
+[18-Dec-2018 00:48:19 UTC] PHP Deprecated:  mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/rrdistri/sistema.rrdistribuidora.com.br/funcionarios/Emerson/caixa/2019/12/4.php on line 178

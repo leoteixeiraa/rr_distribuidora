@@ -1,0 +1,11 @@
+leonardo musashi miyamoto
+th3ultimat3@hotmail.com
+http://harukanata.no-ip.org
+
+Esse programa faz a selecao feita por vc de tabelas que deseja exibir.
+
+coloque o nome do seu banco de dados MYSQL, depoiis coloque o nome da tabela que deseja exibir os dados e depois selecione os campos que deseja exibir.
+
+muito fácil.
+
+abraços

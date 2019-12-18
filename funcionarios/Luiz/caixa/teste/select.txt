@@ -1,0 +1,32 @@
+SELECT tipo, SUM(val_sc) FROM `pagamentos` WHERE data > NOW()" GRUPO BY tipo;
+
+SELECT tipo, dia, mes, ano, SUM(val_sc) FROM pagamentos(dia="27", mes="09", ano="2018") GROUP BY tipo
+
+select data, sum(valor) 
+from tabela
+where (data >= '7/20/2014' and data <= '8/20/2014')
+group by data
+--------------------------------------------------
+SELECT tipo, dia, mes, ano, SUM(val_sc) 
+FROM pagamentos
+where (dia= '27') or (mes= '09') or (ano= '2018')
+GROUP BY tipo
+
+--------------------------------------------------
+SELECT tipo, SUM(val_sc)
+ FROM pagamentos 
+where (dia= '27') or (mes= '09') or (ano= '2018')
+ GROUP BY tipo
+---------------------------------------------------------
+SELECT tipo, SUM(val_sc)
+ FROM pagamentos 
+where (dia= '27') and (mes= '09') and (ano= '2018')
+ GROUP BY tipo
+
+SELECT tipo, SUM(val_sc) FROM pagamentos where (dia= '27') and (mes= '09') and (ano= '2018') GROUP BY tipo
+SELECT tipo, SUM(val_sc) FROM pagamentos where (dia= '27') and (mes= '09') and (ano= '2018') GROUP BY tipo
+SELECT tipo, SUM(val_sc) FROM pagamentos where (dia= '27') and (mes= '09') and (ano= '2018') GROUP BY tipo
+SELECT tipo, SUM(val_sc) FROM pagamentos where (dia= '27') and (mes= '09') and (ano= '2018') GROUP BY tipo
+
+
+
