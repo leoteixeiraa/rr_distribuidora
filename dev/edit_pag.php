@@ -56,7 +56,7 @@ $query = mysqli_query($con, $sql);
 while ($pagamentos = mysqli_fetch_assoc($query)) {
   // Aqui temos o array $produto com todos os valores do produto
   // Consulta para pegar os dados da categoria:
-  $sqlC = "SELECT * FROM `fornecedores` WHERE `id` = " . $pagamentos['id_for'];
+  $sqlC = "SELECT * FROM `produtos` WHERE `id` = " . $pagamentos['id_for'];
   $queryC = mysqli_query($con, $sqlC);
   $fornecedor = mysqli_fetch_assoc($queryC);
   echo 'Emissão: ' . $pagamentos['emissao'] . '';
@@ -93,11 +93,11 @@ while ($pagamentos = mysqli_fetch_assoc($query)) {
      <select name="id_for" class="form-control" style="margin-bottom:20px;">
             <option value="' . $fornecedor['id']. '">' . $fornecedor['nome']. '</option>
       ';
-            $sqlF = "SELECT * FROM fornecedores";
+            $sqlF = "SELECT * FROM produtos";
           
             $queryF = mysqli_query($con, $sqlF);
-            while ($fornecedores = mysqli_fetch_assoc($queryF)) {
-              echo'<option value="' .$fornecedores['id']. '">' . $fornecedores['nome']. '</option>';
+            while ($produtos = mysqli_fetch_assoc($queryF)) {
+              echo'<option value="' .$produtos['id']. '">' . $produtos['nome']. '</option>';
 
             }
       

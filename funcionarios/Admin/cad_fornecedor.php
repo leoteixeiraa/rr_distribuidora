@@ -109,7 +109,7 @@ include 'topo.php';
 <?php
 if(isset($_POST["submit"])){
 
-  $sql = "INSERT INTO fornecedores (tipo, especificacao, custo, preco_sc, preco_pr)
+  $sql = "INSERT INTO produtos (tipo, especificacao, custo, preco_sc, preco_pr)
   VALUES ('".$_POST["tipo"]."','".$_POST["especificacao"]."','".$_POST["custo"]."','".$_POST["preco_sc"]."', '".$_POST["preco_pr"]."')";
 
   if ($con->query($sql) === TRUE) {

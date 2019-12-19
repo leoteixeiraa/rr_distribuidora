@@ -4,7 +4,7 @@ include 'config.php';
 include 'topo.php';
 
 if (isset($_GET['id'])){
-     $upd = mysqli_query($con,"SELECT * FROM fornecedores WHERE id=".$_GET['id']);     
+     $upd = mysqli_query($con,"SELECT * FROM produtos WHERE id=".$_GET['id']);     
 }
 
 ?>
@@ -149,7 +149,7 @@ if (isset($_GET['id'])){
 <?php
 if(isset($_POST["submit"])){
 
-  $sql = "UPDATE `fornecedores` SET rg='".$_POST['rg']."',nome='".$_POST['nome']."',cpf='".$_POST['cpf']."',apelido='".$_POST['apelido']."',cep='".$_POST['cep']."',endereco='".$_POST['endereco']."',numero='".$_POST['numero']."',bairro='".$_POST['bairro']."',cidade='".$_POST['cidade']."',uf='".$_POST['uf']."',complemento='".$_POST['complemento']."',telefone='".$_POST['telefone']."',celular='".$_POST['celular']."',email='".$_POST['email']."',obs='".$_POST['obs']."' WHERE id='".$_POST['id']."'";
+  $sql = "UPDATE `produtos` SET rg='".$_POST['rg']."',nome='".$_POST['nome']."',cpf='".$_POST['cpf']."',apelido='".$_POST['apelido']."',cep='".$_POST['cep']."',endereco='".$_POST['endereco']."',numero='".$_POST['numero']."',bairro='".$_POST['bairro']."',cidade='".$_POST['cidade']."',uf='".$_POST['uf']."',complemento='".$_POST['complemento']."',telefone='".$_POST['telefone']."',celular='".$_POST['celular']."',email='".$_POST['email']."',obs='".$_POST['obs']."' WHERE id='".$_POST['id']."'";
 
   if ($con->query($sql) === TRUE) {
   echo "<script type= 'text/javascript'>alert('Atualizado com sucesso');</script>";

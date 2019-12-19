@@ -17,7 +17,7 @@ $d_b = "rrdistri_sisc";
 //Estilo orientado a objetos
 $con = new mysqli($host, $user, $pass, $d_b);
 
-$res = mysqli_query($con,"SELECT * FROM fornecedores");
+$res = mysqli_query($con,"SELECT * FROM produtos");
 $pag = mysqli_query($con,"SELECT * FROM pagamentos_lucas");
 $car = mysqli_query($con,"SELECT * FROM carga_lucas");
 $cai = mysqli_query($con,"SELECT * FROM caixa_lucas");

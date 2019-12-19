@@ -121,7 +121,7 @@ if( $_SERVER['REQUEST_METHOD']=='POST' ) {
                 <tr>
                   <?php
 			include("DBConfig.php");
-			$result = mysql_query("SELECT id, especificacao, carga FROM carga_emerson INNER JOIN fornecedores using (id)");
+			$result = mysql_query("SELECT id, especificacao, carga FROM carga_emerson INNER JOIN produtos using (id)");
 			
 			while($test = mysql_fetch_array($result))
 			{

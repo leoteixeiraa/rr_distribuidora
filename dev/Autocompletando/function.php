@@ -2,7 +2,7 @@
 include_once("conexao.php");
 
 function retorna($id, $conn){
-	$result_aluno = "SELECT * FROM fornecedores WHERE id = '$id' LIMIT 1";
+	$result_aluno = "SELECT * FROM produtos WHERE id = '$id' LIMIT 1";
 	$resultado_aluno = mysqli_query($conn, $result_aluno);
 	if($resultado_aluno->num_rows){
 		$row_aluno = mysqli_fetch_assoc($resultado_aluno);

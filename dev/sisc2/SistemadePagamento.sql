@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `fornecedores`
+-- Estrutura da tabela `produtos`
 --
 
-CREATE TABLE IF NOT EXISTS `fornecedores` (
+CREATE TABLE IF NOT EXISTS `produtos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `cpf` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `rg` varchar(20) COLLATE utf8_unicode_ci NOT NULL,

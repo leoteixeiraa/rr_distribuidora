@@ -138,7 +138,7 @@ include 'topo.php';
 <?php
 if(isset($_POST["submit"])){
 
-  $sql = "INSERT INTO fornecedores (cpf, rg, nome, apelido, cep, endereco, numero, bairro, complemento, cidade, uf, telefone, celular, email, obs)
+  $sql = "INSERT INTO produtos (cpf, rg, nome, apelido, cep, endereco, numero, bairro, complemento, cidade, uf, telefone, celular, email, obs)
   VALUES ('".$_POST["cpf"]."','".$_POST["rg"]."','".$_POST["nome"]."', '".$_POST["apelido"]."','".$_POST["cep"]."','".$_POST["endereco"]."','".$_POST["numero"]."','".$_POST["bairro"]."','".$_POST["complemento"]."','".$_POST["cidade"]."','".$_POST["uf"]."','".$_POST["telefone"]."','".$_POST["celular"]."','".$_POST["email"]."','".$_POST["obs"]."')";
 
   if ($con->query($sql) === TRUE) {

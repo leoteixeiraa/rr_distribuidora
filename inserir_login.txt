@@ -1,1 +1,5 @@
+inserir usuario:
 insert into usuario (usuario, senha) values ('leo', md5('leo123'));
+
+trocar senha:
+UPDATE usuario SET senha = md5('Admin') where usuario_id = '12'

@@ -6,7 +6,7 @@
 	$especificacao = $_POST['palavra'];
 	
 	//Pesquisar no banco de dados nome do curso referente a palavra digitada pelo usuário
-	$especificacao = "SELECT * FROM fornecedores WHERE especificacao LIKE '%$especificacao%'";
+	$especificacao = "SELECT * FROM produtos WHERE especificacao LIKE '%$especificacao%'";
 	$resultado_cursos = mysqli_query($conn, $especificacao);
 	
 	if(mysqli_num_rows($resultado_cursos) <= 0){

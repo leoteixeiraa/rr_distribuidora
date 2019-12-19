@@ -4,7 +4,7 @@ include 'config.php';
 include 'topo.php';
 
 if (isset($_GET['id'])){
-     $upd = mysqli_query($con,"SELECT * FROM fornecedores WHERE id=".$_GET['id']);     
+     $upd = mysqli_query($con,"SELECT * FROM produtos WHERE id=".$_GET['id']);     
 }
 
 ?>
@@ -114,7 +114,7 @@ if (isset($_GET['id'])){
 <?php
 if(isset($_POST["submit"])){
 
-  $sql = "UPDATE `fornecedores` SET especificacao='".$_POST['especificacao']."',custo='".$_POST['custo']."',preco_sc='".$_POST['preco_sc']."',preco_pr='".$_POST['preco_pr']."',tipo='".$_POST['tipo']."' WHERE id='".$_POST['id']."'";
+  $sql = "UPDATE `produtos` SET especificacao='".$_POST['especificacao']."',custo='".$_POST['custo']."',preco_sc='".$_POST['preco_sc']."',preco_pr='".$_POST['preco_pr']."',tipo='".$_POST['tipo']."' WHERE id='".$_POST['id']."'";
 
   if ($con->query($sql) === TRUE) {
   echo "<script type= 'text/javascript'>alert('Atualizado com sucesso');</script>";
