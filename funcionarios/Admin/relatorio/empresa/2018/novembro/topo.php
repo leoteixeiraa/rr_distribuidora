@@ -134,7 +134,7 @@ crossorigin="anonymous"></script>
              <a class="navbar-brand" href="http://177.85.98.125/~rrdistri/funcionarios/Admin/index.php">Ínicio</a>
             </div>
             <div class="col-md-2"> 
-            <a class="navbar-brand" href="http://177.85.98.125/~rrdistri/funcionarios/Admin/cad_fornecedor.php">Cadastro de Produtos</a>
+            <a class="navbar-brand" href="http://177.85.98.125/~rrdistri/funcionarios/Admin/cad_produto.php">Cadastro de Produtos</a>
             </div>
             <div class="col-md-2">
             <a class="navbar-brand" href="http://177.85.98.125/~rrdistri/funcionarios/Admin/lista_for.php">Lista de Produtos</a>

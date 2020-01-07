@@ -106,7 +106,7 @@ crossorigin="anonymous"></script>
     	       <a class="navbar-brand" href="index.php">Ínicio</a>
             </div>
             <div class="col-md-2"> 
-    	      <a class="navbar-brand" href="cad_fornecedor.php">Cadastro de Produtos</a>
+    	      <a class="navbar-brand" href="cad_produto.php">Cadastro de Produtos</a>
             </div>
             <div class="col-md-2">
     	      <a class="navbar-brand" href="lista_for.php">Lista de Produtos</a>
